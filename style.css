@@ -19,11 +19,14 @@ body {
   text-align: center;
 }
 .mx-auto .input-group #TaskName {
+  box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
   border: 1px solid rgb(0, 0, 0);
   background-color: transparent;
 }
 .mx-auto .input-group #addTask {
+  box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
   height: 50px;
+  width: 100px;
   font-weight: bold;
   border: black 1px solid;
   cursor: pointer;
@@ -46,6 +49,7 @@ body {
   bottom: 20px;
 }
 .mx-auto .display {
+  box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
   border: 1px solid grey;
   height: 500px;
   overflow: auto;

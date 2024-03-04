@@ -22,11 +22,15 @@ body {
 
     .input-group {
         #TaskName {
+            box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
             border: 1px solid rgb(0, 0, 0);
             background-color: transparent;
         }
+
         #addTask {
+            box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
             height: 50px;
+            width: 100px;
             font-weight: bold;
             border: black 1px solid;
             cursor: pointer;
@@ -35,12 +39,12 @@ body {
             #addItems {
                 display: none;
             }
-            
+
             &:hover {
                 color: transparent;
                 cursor: pointer;
                 transition: display linear;
-                
+
                 #addItems {
                     display: flex;
                     justify-content: center;
@@ -54,6 +58,7 @@ body {
     }
 
     .display {
+        box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
         border: 1px solid grey;
         height: 500px;
         overflow: auto;
