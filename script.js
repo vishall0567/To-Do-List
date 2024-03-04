@@ -15,7 +15,6 @@ addTaskBtn.onclick = () => {
   const name = TaskNameTextField.value;
   if (name === "") {
     alert("Please enter a Task!");
-    blur(50)
     return;
   } else if (edit_id != null) {
     userArray.splice(edit_id, 1, {
