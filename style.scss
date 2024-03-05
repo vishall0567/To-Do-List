@@ -12,7 +12,7 @@ body {
     .To-Do {
         h1 {
             font-size: 50px;
-            background: -webkit-linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(#da8de3, #9f0f22);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bolder;
@@ -46,6 +46,7 @@ body {
 
     .display::-webkit-scrollbar {
         background-color: #faace4;
+        width: 10px;
     }
 
     .display::-webkit-scrollbar-thumb {

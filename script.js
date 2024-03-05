@@ -5,25 +5,26 @@ const recordsDisplay = document.getElementById("records");
 let userArray = [];
 let edit_id = null;
 
+
 let objStr = localStorage.getItem("users");
 if (objStr != null) {
   userArray = JSON.parse(objStr);
 }
 DisplayInfo();
+// Get user's name from text field
 addTaskBtn.onclick = () => {
-  // Get user's name from text field
-  const name = TaskNameTextField.value;
-  if (name === "") {
+  const Task = TaskNameTextField.value;
+  if (Task === "") {
     alert("Please enter a Task..!");
     return;
   } else if (edit_id != null) {
     userArray.splice(edit_id, 1, {
-      name: name,
+      name: Task,
     });
     edit_id = null;
   } else {
     userArray.unshift({
-      name: name,
+      name: Task,
     });
   }
 
